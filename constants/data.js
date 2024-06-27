@@ -72,8 +72,8 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ["HTML", "CSS", "React", "ChakraUI"],
-    git_repo: "",
-    live: "",
+    git_repo: "https://github.com/NKhairnar203/PortFolio_Website_in_React",
+    live: "https://nilesh-portfolio-web.netlify.app/",
   },
 ];
 

@@ -12,9 +12,9 @@ const Projects = () => {
       >
         Projects
       </motion.h1>
-      <div className="">
+      <div>
         {PROJECTS.map((project, i) => (
-          <div className=" mb-8 flex flex-wrap lg:justify-center" key={i}>
+          <div className=" mb-8 flex flex-wrap lg:justify-center lg:gap-8" key={i}>
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -23,8 +23,8 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-                width={"200px"}
-                className="mb-6 rounded"
+               
+                className="mb-6 rounded w-full"
                 alt="project-1"
               />
             </motion.div>

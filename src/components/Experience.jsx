@@ -41,6 +41,7 @@ const Experience = () => {
                   {tech}
                 </span>
               ))}
+              
             </motion.div>
           </div>
         ))}

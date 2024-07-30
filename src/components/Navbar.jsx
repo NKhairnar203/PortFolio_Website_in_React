@@ -1,11 +1,11 @@
-import React from 'react'
-import logo from "../assets/logo.jpg"
-import { FaLinkedin, FaGithub,FaTwitter, FaInstagram, FaFileDownload } from "react-icons/fa";
+
+import logo from "../assets/logo.png"
+import { FaLinkedin, FaGithub,FaTwitter} from "react-icons/fa";
 const Navbar = () => {
   return (
     <nav className="mb-20 flex items-center justify-between">
       <div className="flex flex-shrink-0 items-center">
-        <img className="h-8 mx-3 " src={logo} alt="logo" />
+        <img className="h-12 mx-3 " src={logo} alt="logo" />
       </div>
       <div className="m-8 flex items-center justify-center gap-6 text-2xl">
         <a

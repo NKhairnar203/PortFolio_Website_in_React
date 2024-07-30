@@ -1,4 +1,4 @@
-import React from "react";
+
 import { CONTACT } from "../../constants/data";
 import { motion } from "framer-motion";
 

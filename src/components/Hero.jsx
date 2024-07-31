@@ -13,6 +13,12 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const handleResumeClick = () => {
+    window.open(
+      "https://drive.google.com/file/d/1-QxRMswstItVqwVtNzsM4MeUUayTCKIZ/view?usp=sharing",
+      "_blank"
+    );
+  };
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35 h-full">
       <div className="flex flex-wrap">
@@ -42,9 +48,10 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            <motion.a
-              download="Nilesh Khairnar Resume"
-              href="KhairnarNilesh-FrontendDeveloper(React)-3.pdf"
+            <motion.button
+              // download="Nilesh Khairnar Resume"
+              // href="../resume/NileshKhairnar-FullStackWebDeveloper-xE8y.pdf"
+              onClick={handleResumeClick}
               variants={container(1.1)}
               initial="hidden"
               animate="visible"
@@ -52,7 +59,7 @@ const Hero = () => {
             >
               Resume
               <RiDownload2Line />
-            </motion.a>
+            </motion.button>
           </div>
         </div>
         <div className="w-full h-full p-5 lg:w-1/2 lg:p-8">

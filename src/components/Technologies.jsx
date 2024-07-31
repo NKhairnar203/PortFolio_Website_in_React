@@ -12,6 +12,7 @@ import Mongodb from "../assets/TechStack/icons8-mongodb-48.png";
 import ChakraUI from "../assets/TechStack/icons8-chakra-ui-48.png";
 import Tailwind from "../assets/TechStack/icons8-tailwind-css-48.png";
 import Python from '../assets/TechStack/icons8-python-gif.gif'
+import Bootstrap from "../assets/TechStack/icons8-bootstrap-48.png"
 
 
 
@@ -44,7 +45,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className="flex flex-wrap items-center justify-center gap-4"
+        className="flex flex-wrap items-center justify-center gap-4 max-sm:gap-14"
       >
         <motion.div
           variants={iconVariants(2.5)}
@@ -78,6 +79,14 @@ const Technologies = () => {
         >
           <img src={React} alt="React" />
         </motion.div>{" "}
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-4 my-12 max-sm:gap-14"
+      >
+        {" "}
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
@@ -109,7 +118,15 @@ const Technologies = () => {
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
           <img className="bg-white" src={Express} alt="Express" />
-        </motion.div>{" "}
+        </motion.div>
+      </motion.div>
+      <motion.div
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        transition={{ duration: 1.5 }}
+        className="flex flex-wrap items-center justify-center gap-4 my-12 max-sm:gap-14"
+      >
+        {" "}
         <motion.div
           variants={iconVariants(3.5)}
           initial="initial"
@@ -132,8 +149,16 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
+          <img src={Bootstrap} alt="Bootstrap" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(2)}
+          initial="initial"
+          animate="animate"
+          className="rounded-2xl border-4 border-neutral-800 p-4"
+        >
           <img src={Python} alt="js" />
-        </motion.div>{" "}
+        </motion.div>
       </motion.div>
     </div>
   );

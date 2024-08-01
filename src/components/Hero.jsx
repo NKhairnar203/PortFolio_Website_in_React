@@ -18,7 +18,7 @@ const container = (delay) => ({
 const Hero = () => {
   // Resume Downloading function
   const handleResumeClick = () => {
-    const url = `${window.location.origin}/NileshKhairnar_cap04_029.pdf`;
+    const url = `${window.location.origin}/NileshKhairnar_Resume-Cap04_029.pdf`;
     window.open(url, "_blank");
   };
   return (
@@ -54,7 +54,7 @@ const Hero = () => {
               {HERO_CONTENT}
             </motion.p>
             <motion.a
-              href="/NileshKhairnar_cap04_029.pdf"
+              href="/NileshKhairnar_Resume-Cap04_029.pdf"
               download
               onClick={handleResumeClick}
               variants={container(1.2)}

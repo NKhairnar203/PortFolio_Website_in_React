@@ -2,6 +2,9 @@ import profile_pic from "../assets/nilesh-pic.png";
 import { HERO_CONTENT } from "../../constants/data";
 import { motion } from "framer-motion";
 import { RiDownload2Line } from "react-icons/ri";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import "../App.css";
+// import pdf from "../Resumes/NileshKhairnar-FullStackWebDeveloper-01mP.pdf";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -13,17 +16,19 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  // Resume Downloading function
   const handleResumeClick = () => {
-    window.open(
-      "https://drive.google.com/file/d/1-QxRMswstItVqwVtNzsM4MeUUayTCKIZ/view?usp=sharing",
-      "_blank"
-    );
+    const url = `${window.location.origin}/NileshKhairnar_cap04_029.pdf`;
+    window.open(url, "_blank");
   };
   return (
-    <div className="border-b border-neutral-900 pb-4 lg:mb-35 h-full">
+    <div
+      id="home"
+      className="border-b border-neutral-900 pb-4 lg:mb-35 h-full pt-20"
+    >
       <div className="flex flex-wrap">
         <div className="w-full lg:w-1/2">
-          <div className="flex flex-col items-center lg:items-start">
+          <div className="flex flex-col items-center lg:items-start pt-10">
             <motion.h1
               variants={container(0)}
               initial="hidden"
@@ -48,22 +53,57 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
-            <motion.button
-              // download="Nilesh Khairnar Resume"
-              // href="../resume/NileshKhairnar-FullStackWebDeveloper-xE8y.pdf"
+            <motion.a
+              href="/NileshKhairnar_cap04_029.pdf"
+              download
               onClick={handleResumeClick}
-              variants={container(1.1)}
+              variants={container(1.2)}
               initial="hidden"
               animate="visible"
               className="cursor-pointer flex justify-between items-center bg-gray-800 px-5 py-2 rounded-full text-white tracking-wider shadow-xl hover:bg-gray-900 hover:scale-105 duration-500 hover:ring-1 font-mono w-[150px]"
             >
               Resume
               <RiDownload2Line />
-            </motion.button>
+            </motion.a>
+            <motion.div
+              variants={container(1.7)}
+              initial="hidden"
+              animate="visible"
+              className="flex items-center justify-center  mt-2 p-6 pl-0 gap-5 shadow-lg rounded-lg"
+            >
+              {/* <!-- Twitter --> */}
+              <a
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden transition duration-300 hover:bg-blue-400 active:scale-90"
+                href="https://x.com/Nilesh__2003"
+                target="_blank"
+              >
+                <FaTwitter className="w-4 text-white" />
+              </a>
+
+              {/* <!-- LinkedIn --> */}
+              <a
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden transition duration-300 hover:bg-blue-700 active:scale-90"
+                href="https://www.linkedin.com/in/nilesh-khairnar-07b14b254/"
+                target="_blank"
+              >
+                <FaLinkedin className="w-4 text-white" />
+              </a>
+
+              {/* <!-- Git --> */}
+              <a
+                className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center overflow-hidden transition duration-300 hover:bg-gray-600 active:scale-90"
+                href="https://github.com/NKhairnar203/"
+                target="_blank"
+              >
+                <FaGithub className="w-4 text-white" />
+              </a>
+            </motion.div>
+            
+            
           </div>
         </div>
-        <div className="w-full h-full p-5 lg:w-1/2 lg:p-8">
-          <div className="flex justify-center items-center ">
+        <div className="w-full h-full p-10 lg:w-1/2 lg:p-8">
+          <div className="flex p-10 justify-center items-center ">
             <motion.img
               className="brightness-75"
               initial={{ x: 100, opacity: 0 }}

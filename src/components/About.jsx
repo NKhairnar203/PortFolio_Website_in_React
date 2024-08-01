@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { ABOUT_TEXT } from "../../constants/data";
 const About = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="about" className="border-b border-neutral-900 pb-4 pt-1">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >

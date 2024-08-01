@@ -3,10 +3,10 @@ import { PROJECTS } from "../../constants/data";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="projects" className="border-b border-neutral-900 pb-4 pt-3">
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
-        initial={{ opacity: 0, y: -100 }}
+        initial={{ opacity: 0, y: 100 }}
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
@@ -14,7 +14,10 @@ const Projects = () => {
       </motion.h1>
       <div>
         {PROJECTS.map((project, i) => (
-          <div className=" mb-8 flex flex-wrap lg:justify-center lg:gap-8" key={i}>
+          <div
+            className=" mb-8 flex flex-wrap lg:justify-center lg:gap-8"
+            key={i}
+          >
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
@@ -23,7 +26,6 @@ const Projects = () => {
             >
               <img
                 src={project.image}
-               
                 className="mb-6 rounded w-full"
                 alt="project-1"
               />
@@ -36,13 +38,14 @@ const Projects = () => {
             >
               <div className="mb-2 flex flex-wrap items-center gap-5">
                 <h6 className=" font-semibold">{project.title}</h6>
-                <a
-                  href={project.git_repo}
-                  target="_blank"
-                >
+                <a href={project.git_repo} target="_blank">
                   <RiGithubFill className="text-2xl" />
                 </a>
-                <a href={project.live} className=" px-2 text-center bg-white text-neutral-700 font-bold" target='_blank'>
+                <a
+                  href={project.live}
+                  className=" px-2 text-center bg-white text-neutral-700 font-bold"
+                  target="_blank"
+                >
                   Go Live
                 </a>
               </div>

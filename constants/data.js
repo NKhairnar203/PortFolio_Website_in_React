@@ -75,8 +75,8 @@ export const PROJECTS = [
       "Express.js",
       "MongoDB",
     ],
-    git_repo: "https://github.com/NKhairnar203/PortFolio_Website_in_React",
-    live: "https://nilesh-portfolio-web.netlify.app/",
+    git_repo: "https://github.com/NKhairnar203/Job-Portal-Website-Backend",
+    live: "https://job-portal-website-frontend-five.vercel.app/",
   },
 ];
 

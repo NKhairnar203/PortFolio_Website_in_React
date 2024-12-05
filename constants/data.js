@@ -54,18 +54,27 @@ export const PROJECTS = [
   {
     title: "Best Buy Website - Clone",
     image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
+    description: "This website showing my Frontend Skills.",
     technologies: ["HTML", "CSS", "React", "ChakraUI"],
     git_repo: "https://github.com/NKhairnar203/BestBuy-Website-Clone",
     live: "https://bestbuynk.netlify.app/",
   },
   {
-    title: "Personal Portfolio Website",
+    title: "Job Portal - MERN Stack",
     image: project4,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Tailwind"],
+      "A fully functional Job Portal website with features like Job search, Apply Job,user authentication and So on.",
+    technologies: [
+      "HTML",
+      "CSS",
+      "React",
+      "Redux",
+      "Tailwind",
+      "Shadcn/ui",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ],
     git_repo: "https://github.com/NKhairnar203/PortFolio_Website_in_React",
     live: "https://nilesh-portfolio-web.netlify.app/",
   },
